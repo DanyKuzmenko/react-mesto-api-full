@@ -1,0 +1,39 @@
+{
+  "name": "server-mesto",
+  "version": "1.0.0",
+  "description": "[![Tests](https://github.com/yandex-praktikum/express-mesto-gha/actions/workflows/tests-13-sprint.yml/badge.svg)](https://github.com/yandex-praktikum/express-mesto-gha/actions/workflows/tests-13-sprint.yml) [![Tests](https://github.com/yandex-praktikum/express-mesto-gha/actions/workflows/tests-14-sprint.yml/badge.svg)](https://github.com/yandex-praktikum/express-mesto-gha/actions/workflows/tests-14-sprint.yml)\r # Проект Mesto фронтенд + бэкенд",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint express-mesto-gha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanyKuzmenko/express-mesto-gha.git"
+  },
+  "author": "DanyKuzmenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanyKuzmenko/express-mesto-gha/issues"
+  },
+  "homepage": "https://github.com/DanyKuzmenko/express-mesto-gha#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "celebrate": "^15.0.1",
+    "express": "^4.17.3",
+    "express-winston": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.7",
+    "validator": "^13.7.0",
+    "winston": "^3.7.2"
+  }
+}
