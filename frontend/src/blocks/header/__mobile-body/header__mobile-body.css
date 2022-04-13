@@ -1,0 +1,15 @@
+.header__mobile-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(320px - 0.58333*(320px - 100vw));
+    /* пришлось добавить ширину, чтобы верстка не ломалась */
+}
+
+@media screen and (max-width: 767px) {
+    .header__mobile-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

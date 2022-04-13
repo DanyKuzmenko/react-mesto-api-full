@@ -1,0 +1,33 @@
+.login__button {
+    margin: 216px auto 165px auto;
+    /* сделал отступ снизу 150px на глаз, чтобы нормально выглядел footer */
+    padding: 0;
+    width: 358px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    transition: 1s;
+}
+
+.login__button:hover {
+    opacity: .85;
+}
+
+@media screen and (max-width: 767px) {
+    .login__button {
+        width: 260px;
+        height: 46px;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 173px auto 200px auto;
+        /* оступ внизу делал на глаз */
+    }
+}

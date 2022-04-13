@@ -1,0 +1,10 @@
+.card__image {
+    width: 100%;
+    height: 282px;
+    min-height: 282px;
+    /* добавил Min-height, чтобы карточка не теряла внешний вид,
+     если будет добавлено не изображение */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}

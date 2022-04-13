@@ -1,0 +1,12 @@
+.header__mobile-container {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .header__mobile-container {
+        display: none;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(84, 84, 84, .7);
+        margin-bottom: 27px;
+    }
+}

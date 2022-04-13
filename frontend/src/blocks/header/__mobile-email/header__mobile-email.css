@@ -1,0 +1,10 @@
+.header__mobile-email {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    margin: 12px auto 18px auto;
+    padding: 0;
+}

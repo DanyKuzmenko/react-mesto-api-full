@@ -1,0 +1,17 @@
+.register__caption {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+    margin: 15px auto 133px auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .register__caption {
+        margin: 20px auto 200px auto;
+    }
+}

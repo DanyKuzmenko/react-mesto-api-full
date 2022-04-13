@@ -1,0 +1,20 @@
+.card__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 246px;
+    margin: 25px 15px 31px 21px;
+}
+
+@media screen and (max-width: 1024px) {
+    .card__body {
+        margin: 25px auto 31px auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card__body {
+        margin: 25px 15px 31px 21px;
+        /* сделал так, чтобы выглядело, как в макете */
+    }
+}

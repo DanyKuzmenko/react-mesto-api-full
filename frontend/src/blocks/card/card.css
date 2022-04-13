@@ -1,0 +1,21 @@
+.card {
+    max-width: 282px;
+    width: calc(230px - 0.203125*(1024px - 100vw));
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        max-width: 356px;
+        width: calc(282px - 0.28906*(768px - 100vw));
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        max-width: 580px;
+        width: calc(282px - 0.666667*(320px - 100vw));
+    }
+}

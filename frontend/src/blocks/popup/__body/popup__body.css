@@ -1,0 +1,4 @@
+.popup__body {
+    position: relative;
+    z-index: 2;
+}

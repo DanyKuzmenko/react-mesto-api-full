@@ -1,0 +1,7 @@
+@media screen and (max-width: 767px) {
+    .header__mobile-menu_type_open {
+        background-image: url('../../../../images/MobileMenu.svg');
+        width: 24px;
+        height: 21px;
+    }
+}

@@ -1,0 +1,17 @@
+.header__mobile-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #A9A9A9;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__mobile-link:hover {
+    opacity: .6;
+}

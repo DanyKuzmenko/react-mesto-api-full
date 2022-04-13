@@ -1,0 +1,10 @@
+.header__image {
+    width: calc(103.74px - 0.03985*(320px - 100vw));
+}
+
+@media screen and (max-width: 320px) {
+    .header__image {
+        margin-left: 30px;
+        /* не знаю как задать оступ, который будет изменяться от границы page, а не header */
+    }
+}

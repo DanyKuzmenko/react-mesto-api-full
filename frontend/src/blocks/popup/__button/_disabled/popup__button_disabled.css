@@ -1,0 +1,11 @@
+.popup__button_disabled {
+    background-color: #fff;
+    opacity: .2;
+    color: #000;
+    border: 1px solid #000000;
+}
+
+.popup__button_disabled:hover {
+    opacity: .2;
+}
+/* задал opacity при наведении явно, чтобы кнопка не менялась */

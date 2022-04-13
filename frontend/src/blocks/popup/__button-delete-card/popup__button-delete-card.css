@@ -1,0 +1,30 @@
+.popup__button-delete-card {
+  width: 358px;
+  height: 50px;
+  padding: 0;
+  background-color: #000;
+  margin: 2px 36px 37px 36px; /* сделал отступ 2px, чтобы попап соответствовал верстке */
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  transition: 1s;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.popup__button-delete-card:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__button-delete-card {
+      width: 238px;
+      height: 46px;
+      font-size: 14px;
+      line-height: 17px;
+      margin: 45px 22px 25px 22px;
+  }
+}

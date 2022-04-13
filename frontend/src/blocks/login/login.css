@@ -1,0 +1,5 @@
+.login {
+    max-width: 880px;
+    width: calc(320px - 0.58333*(320px - 100vw));
+    margin: 0 auto;
+}

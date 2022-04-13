@@ -1,0 +1,7 @@
+@media screen and (max-width: 767px) {
+    .header__mobile-menu_type_close {
+        background-image: url('../../../../images/MobileMenuCloseButton.svg');
+        width: 20px;
+        height: 20px;
+    }
+}
