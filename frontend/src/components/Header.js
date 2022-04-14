@@ -13,6 +13,9 @@ function Header(props) {
 
     function signOut() {
         localStorage.removeItem('jwt');
+        props.clearCards([]);
+        props.clearUserInfo({});
+        props.setLoggedIn(false);
         history.push('/signin');
     }
 

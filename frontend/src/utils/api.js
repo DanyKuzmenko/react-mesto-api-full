@@ -1,7 +1,6 @@
 class Api {
-    constructor({ address, token }) {
+    constructor({ address}) {
         this._address = address;
-        this._token = token;
     }
 
     _checkResponse(res) {
@@ -14,7 +13,7 @@ class Api {
     getInitialCards() {
         return fetch(`${this._address}/cards`, {
             headers: {
-                authorization: this._token
+                "Authorization": getToken()
             }
         })
             .then(this._checkResponse)
@@ -23,7 +22,7 @@ class Api {
     getUserApiInfo() {
         return fetch(`${this._address}/users/me`, {
             headers: {
-                authorization: this._token
+                "Authorization": getToken()
             }
         })
             .then(this._checkResponse)
@@ -33,7 +32,7 @@ class Api {
         return fetch(`${this._address}/users/me`, {
             method: 'PATCH',
             headers: {
-                authorization: this._token,
+                "Authorization": getToken(),
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -48,7 +47,7 @@ class Api {
         return fetch(`${this._address}/cards`, {
             method: 'POST',
             headers: {
-                authorization: this._token,
+                "Authorization": getToken(),
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -63,7 +62,7 @@ class Api {
         return fetch(`${this._address}/cards/${cardId}`, {
             method: 'DELETE',
             headers: {
-                authorization: this._token
+                "Authorization": getToken()
             }
         })
             .then(this._checkResponse)
@@ -74,7 +73,7 @@ class Api {
             return fetch(`${this._address}/cards/${cardId}/likes`, {
                 method: 'DELETE',
                 headers: {
-                    authorization: this._token
+                    "Authorization": getToken()
                 }
             })
                 .then(this._checkResponse)
@@ -82,7 +81,7 @@ class Api {
             return fetch(`${this._address}/cards/${cardId}/likes`, {
                 method: 'PUT',
                 headers: {
-                    authorization: this._token,
+                    "Authorization": getToken(),
                     'Content-Type': 'application/json'
                 }
             })
@@ -94,7 +93,7 @@ class Api {
         return fetch(`${this._address}/users/me/avatar`, {
             method: 'PATCH',
             headers: {
-                authorization: this._token,
+                "Authorization": getToken(),
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -105,9 +104,12 @@ class Api {
     }
 }
 
+const getToken = () => {
+    return `Bearer ${localStorage.getItem('jwt')}`;
+}
+
 const apiClass = new Api({
-    address: 'https://mesto.nomoreparties.co/v1/cohort-32',
-    token: 'cdf974ac-200c-4f73-b0e2-a7b77d2bb087'
+    address: 'http://api.dankuzmenko.mesto.nomoredomains.work'
 });
 
 export default apiClass;

@@ -1,0 +1,297 @@
+{
+  "level": "error",
+  "message": "middlewareError",
+  "meta": {
+    "date": "Thu Apr 14 2022 01:06:00 GMT+0300 (Москва, стандартное время)",
+    "error": {
+      "statusCode": 401
+    },
+    "exception": true,
+    "level": "error",
+    "message": "uncaughtException: Необходима авторизация\nError: Необходима авторизация\n    at module.exports (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\middlewares\\auth.js:7:17)\n    at Layer.handle [as handle_request] (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:323:13)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:341:12)\n    at next (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:224:17\n    at originCallback (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:214:15)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:219:13",
+    "os": {
+      "loadavg": [
+        0,
+        0,
+        0
+      ],
+      "uptime": 809519
+    },
+    "process": {
+      "argv": [
+        "D:\\node.js\\node.exe",
+        "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\app.js"
+      ],
+      "cwd": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend",
+      "execPath": "D:\\node.js\\node.exe",
+      "gid": null,
+      "memoryUsage": {
+        "arrayBuffers": 18684271,
+        "external": 23310110,
+        "heapTotal": 60276736,
+        "heapUsed": 34571720,
+        "rss": 73728000
+      },
+      "pid": 19664,
+      "uid": null,
+      "version": "v16.13.1"
+    },
+    "req": {
+      "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+        "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU3NDQ4ZTYxNDI2ZjNmN2Q1ZDcyYTEiLCJpYXQiOjE2NDk4ODY4ODUsImV4cCI6MTY1MDQ5MTY4NX0.y0lCCr0hUwLsuEdwKvQLfqVmUyPQJ-saq4fidTxKIJk",
+        "connection": "keep-alive",
+        "host": "localhost:3000",
+        "if-none-match": "W/\"9-1dTNB2FqVCiRt+wtAlezoktphW4\"",
+        "origin": "http://localhost:3001",
+        "referer": "http://localhost:3001/",
+        "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+      },
+      "httpVersion": "1.1",
+      "method": "GET",
+      "originalUrl": "/cards",
+      "query": {},
+      "url": "/cards"
+    },
+    "stack": "Error: Необходима авторизация\n    at module.exports (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\middlewares\\auth.js:7:17)\n    at Layer.handle [as handle_request] (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:323:13)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:341:12)\n    at next (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:224:17\n    at originCallback (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:214:15)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:219:13",
+    "trace": [
+      {
+        "column": 17,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\middlewares\\auth.js",
+        "function": "module.exports",
+        "line": 7,
+        "method": "exports",
+        "native": false
+      },
+      {
+        "column": 5,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\layer.js",
+        "function": "Layer.handle [as handle_request]",
+        "line": 95,
+        "method": "handle [as handle_request]",
+        "native": false
+      },
+      {
+        "column": 13,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js",
+        "function": "trim_prefix",
+        "line": 323,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 7,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js",
+        "function": null,
+        "line": 284,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 12,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js",
+        "function": "Function.process_params",
+        "line": 341,
+        "method": "process_params",
+        "native": false
+      },
+      {
+        "column": 10,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js",
+        "function": "next",
+        "line": 275,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 7,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js",
+        "function": "cors",
+        "line": 188,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 17,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js",
+        "function": null,
+        "line": 224,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 15,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js",
+        "function": "originCallback",
+        "line": 214,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 13,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js",
+        "function": null,
+        "line": 219,
+        "method": null,
+        "native": false
+      }
+    ]
+  }
+}
+
+{
+  "level": "error",
+  "message": "middlewareError",
+  "meta": {
+    "date": "Thu Apr 14 2022 19:34:29 GMT+0300 (Москва, стандартное время)",
+    "error": {
+      "statusCode": 401
+    },
+    "exception": true,
+    "level": "error",
+    "message": "uncaughtException: [object Object]\nError: [object Object]\n    at module.exports (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\middlewares\\auth.js:8:17)\n    at Layer.handle [as handle_request] (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:323:13)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:341:12)\n    at next (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:224:17\n    at originCallback (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:214:15)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:219:13",
+    "os": {
+      "loadavg": [
+        0,
+        0,
+        0
+      ],
+      "uptime": 876029
+    },
+    "process": {
+      "argv": [
+        "D:\\node.js\\node.exe",
+        "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\app.js"
+      ],
+      "cwd": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend",
+      "execPath": "D:\\node.js\\node.exe",
+      "gid": null,
+      "memoryUsage": {
+        "arrayBuffers": 18311794,
+        "external": 19332795,
+        "heapTotal": 28295168,
+        "heapUsed": 26030008,
+        "rss": 56389632
+      },
+      "pid": 13208,
+      "uid": null,
+      "version": "v16.13.1"
+    },
+    "req": {
+      "headers": {
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+        "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU3NDQ4ZTYxNDI2ZjNmN2Q1ZDcyYTEiLCJpYXQiOjE2NDk4ODY4ODUsImV4cCI6MTY1MDQ5MTY4NX0.y0lCCr0hUwLsuEdwKvQLfqVmUyPQJ-saq4fidTxKIJk",
+        "connection": "keep-alive",
+        "host": "localhost:3000",
+        "if-none-match": "W/\"350-q1a6dra7Yq4K99N99HfgE9eCku8\"",
+        "origin": "http://localhost:3001",
+        "referer": "http://localhost:3001/",
+        "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
+      },
+      "httpVersion": "1.1",
+      "method": "GET",
+      "originalUrl": "/cards",
+      "query": {},
+      "url": "/cards"
+    },
+    "stack": "Error: [object Object]\n    at module.exports (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\middlewares\\auth.js:8:17)\n    at Layer.handle [as handle_request] (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:323:13)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:341:12)\n    at next (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:224:17\n    at originCallback (C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:214:15)\n    at C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js:219:13",
+    "trace": [
+      {
+        "column": 17,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\middlewares\\auth.js",
+        "function": "module.exports",
+        "line": 8,
+        "method": "exports",
+        "native": false
+      },
+      {
+        "column": 5,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\layer.js",
+        "function": "Layer.handle [as handle_request]",
+        "line": 95,
+        "method": "handle [as handle_request]",
+        "native": false
+      },
+      {
+        "column": 13,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js",
+        "function": "trim_prefix",
+        "line": 323,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 7,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js",
+        "function": null,
+        "line": 284,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 12,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js",
+        "function": "Function.process_params",
+        "line": 341,
+        "method": "process_params",
+        "native": false
+      },
+      {
+        "column": 10,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\express\\lib\\router\\index.js",
+        "function": "next",
+        "line": 275,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 7,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js",
+        "function": "cors",
+        "line": 188,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 17,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js",
+        "function": null,
+        "line": 224,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 15,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js",
+        "function": "originCallback",
+        "line": 214,
+        "method": null,
+        "native": false
+      },
+      {
+        "column": 13,
+        "file": "C:\\Users\\Даниил\\Desktop\\Yandex_Praktikum\\react-mesto-api-full\\react-mesto-api-full\\backend\\node_modules\\cors\\lib\\index.js",
+        "function": null,
+        "line": 219,
+        "method": null,
+        "native": false
+      }
+    ]
+  }
+}

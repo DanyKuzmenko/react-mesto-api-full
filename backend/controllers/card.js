@@ -4,7 +4,7 @@ const ErrorForbidden = require('../errors/ErrorForbidden');
 const ErrorBadRequest = require('../errors/ErrorBadRequest');
 
 module.exports.getCards = (req, res, next) => {
-  Card.find({})
+  Card.find({}).sort({ _id: -1 })
     .then((cards) => res.send({ data: cards }))
     .catch(next);
 };
