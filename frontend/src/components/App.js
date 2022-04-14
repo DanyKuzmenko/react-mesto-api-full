@@ -61,8 +61,6 @@ function App() {
             const jwt = localStorage.getItem('jwt');
             auth.checkToken(jwt)
                 .then(res => {
-                    if(res === 'undefined')
-                        return new Error();
                     setEmail(res.email);
                     setLoggedIn(true);
                     history.push('/');
