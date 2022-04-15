@@ -29,7 +29,7 @@ function Main(props) {
                         link={item.link}
                         likes={item.likes}
                         id={item._id}
-                        ownerId={item.owner._id}
+                        ownerId={item.owner}
                         onCardDelete={props.onCardDelete}
                         onCardLike={props.onCardLike}
                         onCardClick={props.onCardClick}

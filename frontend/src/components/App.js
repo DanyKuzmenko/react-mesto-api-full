@@ -15,7 +15,6 @@ import Register from './Register';
 import ProtectedRoute from './ProtectedRoute';
 import InfoTooltip from './InfoTooltip';
 import * as auth from '../utils/auth';
-// валидацию форм сделать не успел, сделаю позже:))
 
 function App() {
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
@@ -36,6 +35,8 @@ function App() {
     const history = useHistory();
 
     React.useEffect(() => {
+        if(!loggedIn)
+            return;
         apiClass.getUserApiInfo()
             .then(res => {
                 setCurrentUser(res);
@@ -43,7 +44,7 @@ function App() {
             .catch(err => console.log(err));
         apiClass.getInitialCards()
             .then((res) => {
-                addCard(res);
+                addCard(res.data);
             })
             .catch(error => console.log(error));
         const closeByEscape = (e) => {
@@ -53,14 +54,14 @@ function App() {
         }
         document.addEventListener('keydown', closeByEscape);
         return () => document.removeEventListener('keydown', closeByEscape);
-    }, []);
+    }, [loggedIn]);
 
     React.useEffect(() => {
         if (localStorage.getItem('jwt')) {
             const jwt = localStorage.getItem('jwt');
             auth.checkToken(jwt)
                 .then(res => {
-                    setEmail(res.data.email);
+                    setEmail(res.email);
                     setLoggedIn(true);
                     history.push('/');
                 })
@@ -69,7 +70,7 @@ function App() {
     }, [])
 
     function handleCardLike(card) {
-        const isLiked = card.likes.some(i => i._id === currentUser._id);
+        const isLiked = card.likes.some(i => i === currentUser._id);
         apiClass.changeLikeCardStatus(card.id, isLiked).
             then((newCard) => {
                 addCard((cards) => cards.map(c => c._id === card.id ? newCard : c))
@@ -167,7 +168,7 @@ function App() {
     function handleLoginSubmit(password, email, clearFormData) {
         auth.authorize(password, email)
             .then(res => {
-                localStorage.setItem('jwt', res.token);
+                localStorage.setItem('jwt', res.message);
                 setLoggedIn(true);
                 setEmail(email);
                 clearFormData();
@@ -193,7 +194,11 @@ function App() {
     return (
         <CurrentUserContext.Provider value={currentUser}>
             <Header
-                email={email} />
+                email={email}
+                clearCards={addCard}
+                clearUserInfo={setCurrentUser}
+                setLoggedIn={setLoggedIn}
+            />
             <Switch>
                 <Route path="/signup">
                     <Register

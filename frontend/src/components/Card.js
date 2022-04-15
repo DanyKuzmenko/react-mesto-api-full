@@ -5,7 +5,7 @@ function Card(props) {
     const currentUser = React.useContext(CurrentUserContext);
     const isOwn = props.ownerId === currentUser._id;
     const cardDeleteButtonClassName = (`${isOwn ? 'card__delete-icon' : 'card__delete-icon_hidden'}`);
-    const isLiked = props.likes.some(i => i._id === currentUser._id);
+    const isLiked = props.likes.some(i => i === currentUser._id);
     const cardLikeButtonClassName = (`card__like ${isLiked ? 'card__like_active' : 'card__like'}`);
 
     function handleClick() {

@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://auth.nomoreparties.co';
+export const BASE_URL = 'http://api.dankuzmenko.mesto.nomoredomains.work';
 
 const getJson = (response) => {
     if (response.ok) {
