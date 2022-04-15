@@ -1,8 +1,8 @@
+.env
 # Logs
 logs
 *.log
 npm-debug.log*
-*.env
 
 # Dependency directory
 node_modules
