@@ -16,6 +16,7 @@
 В проекте используются следующие технологии: React, Node.js, MongoDB, Express, Git, Eslint
 
 ## Ссылки
-Проект: http://dankuzmenko.mesto.nomoredomains.work  
+Проект: http://dankuzmenko.mesto.nomoredomains.work
+IP: 51.250.69.194
 GitHub: https://github.com/DanyKuzmenko  
 LinkedIn: https://www.linkedin.com/in/daniil-kuzmenko-30a33822b/
