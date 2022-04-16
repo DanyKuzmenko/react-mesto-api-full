@@ -35,7 +35,7 @@ function Register(props) {
                         type="password"
                         placeholder="Пароль"
                         required
-                        minLength='8'
+                        minLength='4'
                         maxLength='16'
                         name="password"
                         onChange={handleInputChange}
