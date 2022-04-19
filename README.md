@@ -17,6 +17,6 @@
 
 ## Ссылки
 Сайт: http://dankuzmenko.mesto.nomoredomains.work  
-IP: 51.250.69.194  
 GitHub: https://github.com/DanyKuzmenko  
-LinkedIn: https://www.linkedin.com/in/daniil-kuzmenko-30a33822b/
+LinkedIn: https://www.linkedin.com/in/daniil-kuzmenko-30a33822b/  
+IP: 51.250.69.194  
