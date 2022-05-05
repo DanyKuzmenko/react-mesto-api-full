@@ -1,28 +1,18 @@
-[![Tests](https://github.com/yandex-praktikum/express-mesto-gha/actions/workflows/tests-13-sprint.yml/badge.svg)](https://github.com/yandex-praktikum/express-mesto-gha/actions/workflows/tests-13-sprint.yml) [![Tests](https://github.com/yandex-praktikum/express-mesto-gha/actions/workflows/tests-14-sprint.yml/badge.svg)](https://github.com/yandex-praktikum/express-mesto-gha/actions/workflows/tests-14-sprint.yml)
-# Проект Mesto фронтенд + бэкенд
+# **Бэкэнд сервер для проекта Mesto**
 
+## **Описание**
+Это сервер для проекта mesto. Он хранит данные пользователя и его карточки, принимает и отправляет запросы.  
 
+## **Функциональность:**  
+* Использование MongoDB
+* Обработка запросов
+* Обработка ошибок (400, 401, 403, 404, 409, 500), собственные кастомные классы
+* Подключенный eslint
 
-## Настройка бейджей статуса тестов
-Перед началом работы над проектом рекомендуется исправить бейджи, отражающие статус прохождения тестов.
-Для этого замените разметку бейджей на следующий фрагмент, подставив вместо `${имя_пользователя}` и `${имя_репозитория}` соответствующие значения.
+## **Запуск проекта:**  
+`npm run start` — запускает сервер  
+`npm run dev` — запускает сервер с hot-reload  
 
-
-[![Tests for sprint 13](https://github.com/DanyKuzmenko/express-mesto-gha/actions/workflows/tests-13-sprint.yml/badge.svg)](https://github.com/DanyKuzmenko/express-mesto-gha/actions/workflows/tests-13-sprint.yml) 
-
-[![Tests for sprint 14](https://github.com/DanyKuzmenko/express-mesto-gha/actions/workflows/tests-14-sprint.yml/badge.svg)](https://github.com/DanyKuzmenko/express-mesto-gha/actions/workflows/tests-14-sprint.yml)
-
-
-
-## Директории
-
-`/routes` — папка с файлами роутера  
-`/controllers` — папка с файлами контроллеров пользователя и карточки   
-`/models` — папка с файлами описания схем пользователя и карточки  
-  
-Остальные директории вспомогательные, создаются при необходимости разработчиком
-
-## Запуск проекта
-
-`npm run start` — запускает сервер   
-`npm run dev` — запускает сервер с hot-reload
+### **Ссылки:**
+Github: https://github.com/DanyKuzmenko  
+LinkedIn: https://www.linkedin.com/in/daniil-kuzmenko-30a33822b/  
