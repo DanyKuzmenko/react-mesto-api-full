@@ -17,5 +17,6 @@
 
 ## Ссылки
 Сайт: https://react-mesto-api-full-chi.vercel.app  
+Бэкэнд сервер: https://mesto-dankuzmenko.herokuapp.com/  
 GitHub: https://github.com/DanyKuzmenko  
 LinkedIn: https://www.linkedin.com/in/daniil-kuzmenko-30a33822b/
