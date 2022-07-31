@@ -109,7 +109,7 @@ const getToken = () => {
 }
 
 const apiClass = new Api({
-    address: 'http://api.dankuzmenko.mesto.nomoredomains.work'
+    address: 'https://mesto-dankuzmenko.herokuapp.com'
 });
 
 export default apiClass;

@@ -10,7 +10,7 @@ const errorHandler = require('./middlewares/errorHandler');
 const ErrorNotFound = require('./errors/ErrorNotFound');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3000, NODE_ENV, MONGODB_ADDRESS } = process.env;
 
 const app = express();
 
@@ -19,7 +19,8 @@ app.use(express.json());
 app.use(requestLogger);
 
 app.use(cors({
-  origin: 'http://dankuzmenko.mesto.nomoredomains.work',
+  origin: ['https://react-mesto-api-full-chi.vercel.app',
+    'http://react-mesto-api-full-chi.vercel.app'],
   credentials: true,
 }));
 
@@ -54,7 +55,7 @@ app.use(errors());
 app.use(errorHandler);
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/mestodb');
+  await mongoose.connect(NODE_ENV === 'production' ? MONGODB_ADDRESS: 'mongodb://localhost:27017/mestodb');
   app.listen(PORT);
 }
 
